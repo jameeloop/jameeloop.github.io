@@ -1,11 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://jameeloop.github.io/albacore-site/">
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected, <a href="https://jameeloop.github.io/albacore-site/">click here</a>.</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albacore Designs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #002f4b;
+      --secondary-color: #f9f9f9;
+      --accent-color: #ffb400;
+      --text-dark: #222;
+      --text-light: #777;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--secondary-color);
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      color: var(--white);
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      font-size: 2.5em;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .clients {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .faq {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service, .client, .faq-item {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover, .client:hover, .faq-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .client img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: var(--accent-color);
+      color: var(--white);
+      padding: 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e69b00;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div style="display: flex; align-items: center;">
+          <img src="albacore-logo.png" alt="Albacore Designs Logo" style="height: 42px; margin-right: 12px; filter: brightness(0) invert(1);" />
+          <div>
+            <strong>Albacore Designs</strong><br>
+            <small style="font-weight: normal; font-size: 0.9rem; color: #ccc;">
+              Vehicle Wraps, Fleet Graphics & Custom Branding
+            </small>
+          </div>
+        </div>
+        <div>
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+          
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Full Van Wraps</h3>
+        <p>Transform your vehicles with striking full-wraps using high-performance vinyls and eye-catching designs.</p>
+      </div>
+      <div class="service">
+        <h3>Fleet Livery</h3>
+        <p>Boost brand recognition with consistent designs across your fleet, tailored to your industry and needs.</p>
+      </div>
+      <div class="service">
+        <h3>Decals & Stickers</h3>
+        <p>Simple, sharp and scalable. Add logos, services, or QR codes with weatherproof vinyl decals.</p>
+      </div>
+      <div class="service">
+        <h3>Reflective Graphics</h3>
+        <p>Compliant with Chapter 8 regulations, our reflective wraps keep your fleet safe and visible day or night.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" class="section">
+    <h2>Our Clients</h2>
+    <div class="clients">
+      <div class="client">
+        <img src="van1.jpg" alt="Shirts Up" />
+        <p><strong>Shirts Up</strong><br/>Branded wrap for a screen printing and embroidery company.<br/><span style="color: #ffb400; font-weight: bold;">★ ★ ★ ★ ★</span></p>
+      </div>
+      <div class="client">
+        <img src="van2.png" alt="Anderson Painting Services" />
+        <p><strong>Anderson Painting Services</strong><br/>Minimalist wrap with contact info and brush logo.<br/><span style="color: #ffb400; font-weight: bold;">★ ★ ★ ★ ★</span></p>
+      </div>
+      <div class="client">
+        <img src="van3.jpg" alt="Oxford Recycling" />
+        <p><strong>Oxford Recycling</strong><br/>Bold orange and black wrap for a recycling company.<br/><span style="color: #ffb400; font-weight: bold;">★ ★ ★ ★ ★</span></p>
+      </div>
+      <div class="client">
+        <img src="van4.jpg" alt="Interiors in London" />
+        <p><strong>Interiors in London</strong><br/>Elegant branding for a soft furnishings manufacturer.<br/><span style="color: #ffb400; font-weight: bold;">★ ★ ★ ★ ★</span></p>
+      </div>
+      <div class="client">
+        <img src="van4.webp" alt="Greensleeves" />
+        <p><strong>Greensleeves</strong><br/>Clean and bright van wrap for lawn care services.<br/><span style="color: #ffb400; font-weight: bold;">★ ★ ★ ★ ★</span></p>
+      </div>
+      <div class="client">
+        <img src="van6.jpg" alt="Flat Pack Dan" />
+        <p><strong>Flat Pack Dan</strong><br/>Professional flat pack assembly service with bold wrap.<br/><span style="color: #ffb400; font-weight: bold;">★ ★ ★ ★ ★</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>How long does a van wrap last?</h3>
+        <p>Our wraps typically last between 5–7 years depending on care and exposure.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is the wrap removable?</h3>
+        <p>Yes, our materials are designed to be removed without damaging the original paint.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you provide nationwide service?</h3>
+        <p>We offer coverage across the UK and provide on-site installation for fleet jobs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Albacore Designs | info@albacoredesigns.co.uk | Reg. No. 12345678<br/>
+    London, UK
+  </footer>
+</body>
 </html>
